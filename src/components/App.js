@@ -9,9 +9,10 @@ class App extends Component {
       }
    };
    render() {
+      const para = this.state.text.length === 0 ? null : <p id = "para">{ this.state.text }</p>
       return(
          <div id="main">
-            <p id = "para">{ this.state.text }</p>
+            {para}
             <button id = "click" onClick = {this.handleButton.bind(this)}>Submit</button>
          </div>
       );
