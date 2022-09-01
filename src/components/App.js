@@ -8,11 +8,6 @@ class App extends Component {
          text:""
       }
    };
-   handleButton = function() {
-      this.setState({
-         text : "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"   
-      })
-   }
    render() {
       return(
          <div id="main">
@@ -21,6 +16,12 @@ class App extends Component {
          </div>
       );
    }
+}
+
+App.prototype.handleButton = function() {
+   this.setState({
+      text : "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"   
+   })
 }
 
 
