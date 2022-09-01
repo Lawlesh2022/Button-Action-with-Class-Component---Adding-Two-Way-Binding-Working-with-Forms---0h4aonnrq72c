@@ -9,8 +9,8 @@ class App extends Component {
 		    text:""
 	    }
       const handleButton = ()=>{
-	      setState({
-		   this.state.text : "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"   
+	      this.setState({
+		   text : "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"   
 	      })
       }
 	};
@@ -18,8 +18,8 @@ class App extends Component {
     render() {
     	return(
     		<div id="main">
-			<p id = "para">{ this.state.text }<p/>
-		<button id = "click" onClick = {handleButton}>Submit<button/>
+			<p id = "para">{ this.state.text }</p>
+		<button id = "click" onClick = {handleButton}>Submit</button>
     		</div>
     	);
     }
