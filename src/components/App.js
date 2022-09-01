@@ -8,7 +8,7 @@ class App extends Component {
 	    this.state = {
 		    text:""
 	    }
-      const handleButton = ()=>{
+      handleButton = ()=>{
 	      this.setState({
 		   text : "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"   
 	      })
